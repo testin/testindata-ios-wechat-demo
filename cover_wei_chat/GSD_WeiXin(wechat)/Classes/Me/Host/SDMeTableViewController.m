@@ -27,11 +27,13 @@
  */
 
 #import "SDMeTableViewController.h"
+#import "BBBBBViewController.h"
 #import <TestinDataAnalysis/TestinDataAnalysis.h>
 
 @interface SDMeTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet UILabel *walletLabel;
 
 @end
 
@@ -39,19 +41,23 @@
 
 - (instancetype)initWithStyle:(UITableViewStyle)style
 {
-    
+    self = [super initWithStyle:style];
     return [[UIStoryboard storyboardWithName:@"SDMeTableViewController" bundle:nil] instantiateInitialViewController];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [TestinDataAnalysis tracker:@"meclick"];
     self.iconView.layer.cornerRadius = 5;
     self.iconView.clipsToBounds = YES;
     
     self.tableView.tableFooterView = [UIView new];
+    
+    NSString *value = [TestinDataAnalysis getExperimentVariable:@"qian" defaultValue:@"qiaobao"];
+    if ([value isEqualToString:@"qianqian"]) {
+        _walletLabel.text = @"wallet";
+    }
+    
 }
-
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -61,6 +67,27 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 5;
+}
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+//    }
+//    return cell;
+//
+//}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [TestinDataAnalysis tracker:@"StartTheApp"];
+    if (indexPath.section == 3 && indexPath.row == 0) {
+        [self presentViewController:[[BBBBBViewController alloc]init] animated:YES completion:nil];
+    } else if (indexPath.section == 1 && indexPath.row == 2) {
+        [TestinDataAnalysis tracker:@"btn1"];
+    }
 }
 
 @end

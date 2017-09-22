@@ -1,0 +1,8 @@
+platform :ios, '7.0'
+target 'GSD_WeiXin(wechat)' do
+#pod 'Mixpanel'
+pod 'TestinDataAnalysis','~> 4.1.1'
+pod 'OCMock'
+pod 'SDWebImage'
+end
+

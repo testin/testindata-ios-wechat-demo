@@ -164,9 +164,9 @@ const CGFloat kHomeTableViewAnimationDuration = 0.25;
     [self.tableView.superview insertSubview:view atIndex:0];
     self.eyeAnimationView = view;
     
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panView:)];
-    pan.delegate = self;
-    [self.tableView.superview addGestureRecognizer:pan];
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panView:)];
+//    pan.delegate = self;
+//    [self.tableView.superview addGestureRecognizer:pan];
     
 }
 

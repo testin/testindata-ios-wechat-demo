@@ -87,7 +87,14 @@
 		48F337D01C7320380049144A /* MLEmojiLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F337CC1C7320380049144A /* MLEmojiLabel.m */; };
 		48F337D41C73205C0049144A /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F337D31C73205C0049144A /* TTTAttributedLabel.m */; };
 		48F337D81C7324250049144A /* SDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F337D71C7324250049144A /* SDWebViewController.m */; };
-		499DAA491E8D07DF00E3606A /* TestinDataAnalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 499DAA441E8D07DA00E3606A /* TestinDataAnalysis.framework */; };
+		492B92E91EF294B100F36A32 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 492B92E81EF294B100F36A32 /* libz.tbd */; };
+		493898E41F74A53400166AD9 /* TestinDataAnalysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493898E31F74A51700166AD9 /* TestinDataAnalysis.framework */; };
+		49A9058A1F4EB6BF00533BB1 /* Testin_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A905891F4EB6BF00533BB1 /* Testin_Logo.png */; };
+		49A905971F4EB92500533BB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A905961F4EB92500533BB1 /* Images.xcassets */; };
+		49B6DFCE1ED9565A00DE4B23 /* libMixpanel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 492D6D931E9DF19C00FB8FB8 /* libMixpanel.a */; };
+		49F7723F1E9F723600574D25 /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F7723C1E9F723600574D25 /* DViewController.m */; };
+		49F772401E9F723600574D25 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F7723E1E9F723600574D25 /* CViewController.m */; };
+		49F772431E9F723F00574D25 /* BBBBBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F772421E9F723F00574D25 /* BBBBBViewController.m */; };
 		49FC4FB01E6E875E0014B0BA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FC4FAF1E6E875E0014B0BA /* libsqlite3.tbd */; };
 		49FC4FB21E6E87640014B0BA /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FC4FB11E6E87640014B0BA /* libicucore.A.tbd */; };
 		99D692C41C6B36C300DA97E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D692C31C6B36C300DA97E1 /* main.m */; };
@@ -101,7 +108,6 @@
 		99D693191C6B3A0600DA97E1 /* SDMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D693181C6B3A0600DA97E1 /* SDMeTableViewController.m */; };
 		99D6931C1C6B3A3300DA97E1 /* SDDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D6931B1C6B3A3300DA97E1 /* SDDiscoverTableViewController.m */; };
 		99D693241C6B40F100DA97E1 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D6931F1C6B40F100DA97E1 /* Discover.xcassets */; };
-		99D693261C6B40F100DA97E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D693211C6B40F100DA97E1 /* Images.xcassets */; };
 		99D6932C1C6B412F00DA97E1 /* Contacts.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D693291C6B412F00DA97E1 /* Contacts.xcassets */; };
 		99D6932D1C6B412F00DA97E1 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D6932A1C6B412F00DA97E1 /* Home.xcassets */; };
 		99D6932E1C6B412F00DA97E1 /* Me.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D6932B1C6B412F00DA97E1 /* Me.xcassets */; };
@@ -142,30 +148,10 @@
 		99D693971C6F774B00DA97E1 /* SDChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D693961C6F774B00DA97E1 /* SDChatTableViewCell.m */; };
 		99D6949C1C6F81E700DA97E1 /* SDChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D6949B1C6F81E700DA97E1 /* SDChatModel.m */; };
 		99D694F51C8C6B4400DA97E1 /* SDTimeLineRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D694F41C8C6B4400DA97E1 /* SDTimeLineRefreshFooter.m */; };
+		F0200A552C6261D9B6AE8A2D /* libPods-GSD_WeiXin(wechat).a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3845C69827AD102E3EE56D2 /* libPods-GSD_WeiXin(wechat).a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		499DAA431E8D07DA00E3606A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 499DAA3C1E8D07DA00E3606A /* TestinDataAnalysis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 49C40A081D4B54590099CD78;
-			remoteInfo = TestinDataAnalysis;
-		};
-		499DAA451E8D07DA00E3606A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 499DAA3C1E8D07DA00E3606A /* TestinDataAnalysis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 49C40A121D4B54590099CD78;
-			remoteInfo = TestinDataAnalysisTests;
-		};
-		499DAA471E8D07DA00E3606A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 499DAA3C1E8D07DA00E3606A /* TestinDataAnalysis.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 97E5C11B1D9E6C3600268AD3;
-			remoteInfo = TestinData;
-		};
 		99D692D91C6B36C400DA97E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 99D692B71C6B36C300DA97E1 /* Project object */;
@@ -183,6 +169,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2104B7C4BEBDDBCFB0468E1C /* Pods-GSD_WeiXin(wechat).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSD_WeiXin(wechat).debug.xcconfig"; path = "Pods/Target Support Files/Pods-GSD_WeiXin(wechat)/Pods-GSD_WeiXin(wechat).debug.xcconfig"; sourceTree = "<group>"; };
 		4814577C1C8AD85B004CA225 /* SDTimeLineRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTimeLineRefreshHeader.h; sourceTree = "<group>"; };
 		4814577D1C8AD85B004CA225 /* SDTimeLineRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTimeLineRefreshHeader.m; sourceTree = "<group>"; };
 		481457801C8AD8B4004CA225 /* SDBaseRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBaseRefreshView.h; sourceTree = "<group>"; };
@@ -317,7 +304,19 @@
 		48F337D31C73205C0049144A /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		48F337D61C7324250049144A /* SDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebViewController.h; sourceTree = "<group>"; };
 		48F337D71C7324250049144A /* SDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebViewController.m; sourceTree = "<group>"; };
-		499DAA3C1E8D07DA00E3606A /* TestinDataAnalysis.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestinDataAnalysis.xcodeproj; path = "../../../ios-sdk/TestinDataAnalysis/TestinDataAnalysis.xcodeproj"; sourceTree = "<group>"; };
+		492B92E81EF294B100F36A32 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		492D6D931E9DF19C00FB8FB8 /* libMixpanel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMixpanel.a; path = "../../../../Library/Developer/Xcode/DerivedData/GSD_WeiXin(wechat)-cywcgpohdsxcjlenlshudbsskkcf/Build/Products/Debug-iphonesimulator/Mixpanel/libMixpanel.a"; sourceTree = "<group>"; };
+		493898E31F74A51700166AD9 /* TestinDataAnalysis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestinDataAnalysis.framework; sourceTree = "<group>"; };
+		49A905891F4EB6BF00533BB1 /* Testin_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Testin_Logo.png; sourceTree = "<group>"; };
+		49A905961F4EB92500533BB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49BDCF6A1EA0668C00DDE922 /* TestinDataAnalysis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestinDataAnalysis.framework; path = Pods/TestinDataAnalysis/TestinDataAnalysis/TestinDataAnalysis.framework; sourceTree = "<group>"; };
+		49C56C4C1E8FC5390059CCC5 /* libMixpanel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMixpanel.a; path = "../../../../Library/Developer/Xcode/DerivedData/GSD_WeiXin(wechat)-gvycjsjfwgdbslcesphtdvrixtfz/Build/Products/Debug-iphonesimulator/Mixpanel/libMixpanel.a"; sourceTree = "<group>"; };
+		49F7723B1E9F723600574D25 /* DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DViewController.h; sourceTree = "<group>"; };
+		49F7723C1E9F723600574D25 /* DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DViewController.m; sourceTree = "<group>"; };
+		49F7723D1E9F723600574D25 /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
+		49F7723E1E9F723600574D25 /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
+		49F772411E9F723F00574D25 /* BBBBBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBBBBViewController.h; sourceTree = "<group>"; };
+		49F772421E9F723F00574D25 /* BBBBBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBBBViewController.m; sourceTree = "<group>"; };
 		49FC4FAF1E6E875E0014B0BA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		49FC4FB11E6E87640014B0BA /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
 		99D692BF1C6B36C300DA97E1 /* GSD_WeiXin(wechat).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GSD_WeiXin(wechat).app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,7 +342,6 @@
 		99D6931A1C6B3A3300DA97E1 /* SDDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDiscoverTableViewController.h; sourceTree = "<group>"; };
 		99D6931B1C6B3A3300DA97E1 /* SDDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDiscoverTableViewController.m; sourceTree = "<group>"; };
 		99D6931F1C6B40F100DA97E1 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
-		99D693211C6B40F100DA97E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99D693291C6B412F00DA97E1 /* Contacts.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Contacts.xcassets; sourceTree = "<group>"; };
 		99D6932A1C6B412F00DA97E1 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
 		99D6932B1C6B412F00DA97E1 /* Me.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Me.xcassets; sourceTree = "<group>"; };
@@ -398,6 +396,8 @@
 		99D6949B1C6F81E700DA97E1 /* SDChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDChatModel.m; sourceTree = "<group>"; };
 		99D694F31C8C6B4400DA97E1 /* SDTimeLineRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTimeLineRefreshFooter.h; sourceTree = "<group>"; };
 		99D694F41C8C6B4400DA97E1 /* SDTimeLineRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTimeLineRefreshFooter.m; sourceTree = "<group>"; };
+		D4069727E533DCCAB23F2572 /* Pods-GSD_WeiXin(wechat).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSD_WeiXin(wechat).release.xcconfig"; path = "Pods/Target Support Files/Pods-GSD_WeiXin(wechat)/Pods-GSD_WeiXin(wechat).release.xcconfig"; sourceTree = "<group>"; };
+		F3845C69827AD102E3EE56D2 /* libPods-GSD_WeiXin(wechat).a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GSD_WeiXin(wechat).a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,9 +405,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				499DAA491E8D07DF00E3606A /* TestinDataAnalysis.framework in Frameworks */,
+				493898E41F74A53400166AD9 /* TestinDataAnalysis.framework in Frameworks */,
+				492B92E91EF294B100F36A32 /* libz.tbd in Frameworks */,
+				49B6DFCE1ED9565A00DE4B23 /* libMixpanel.a in Frameworks */,
 				49FC4FB21E6E87640014B0BA /* libicucore.A.tbd in Frameworks */,
 				49FC4FB01E6E875E0014B0BA /* libsqlite3.tbd in Frameworks */,
+				F0200A552C6261D9B6AE8A2D /* libPods-GSD_WeiXin(wechat).a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,26 +782,29 @@
 			path = WebViewController;
 			sourceTree = "<group>";
 		};
-		499DAA3D1E8D07DA00E3606A /* Products */ = {
+		7EBDF22423C2FE296E62E505 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				499DAA441E8D07DA00E3606A /* TestinDataAnalysis.framework */,
-				499DAA461E8D07DA00E3606A /* TestinDataAnalysisTests.xctest */,
-				499DAA481E8D07DA00E3606A /* TestinDataAnalysis.bundle */,
+				492B92E81EF294B100F36A32 /* libz.tbd */,
+				49BDCF6A1EA0668C00DDE922 /* TestinDataAnalysis.framework */,
+				492D6D931E9DF19C00FB8FB8 /* libMixpanel.a */,
+				49C56C4C1E8FC5390059CCC5 /* libMixpanel.a */,
+				49FC4FB11E6E87640014B0BA /* libicucore.A.tbd */,
+				49FC4FAF1E6E875E0014B0BA /* libsqlite3.tbd */,
+				F3845C69827AD102E3EE56D2 /* libPods-GSD_WeiXin(wechat).a */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		99D692B61C6B36C300DA97E1 = {
 			isa = PBXGroup;
 			children = (
-				499DAA3C1E8D07DA00E3606A /* TestinDataAnalysis.xcodeproj */,
-				49FC4FB11E6E87640014B0BA /* libicucore.A.tbd */,
-				49FC4FAF1E6E875E0014B0BA /* libsqlite3.tbd */,
 				99D692C11C6B36C300DA97E1 /* GSD_WeiXin(wechat) */,
 				99D692DB1C6B36C400DA97E1 /* GSD_WeiXin(wechat)Tests */,
 				99D692E61C6B36C400DA97E1 /* GSD_WeiXin(wechat)UITests */,
 				99D692C01C6B36C300DA97E1 /* Products */,
+				EEA2000B990281FDDC648653 /* Pods */,
+				7EBDF22423C2FE296E62E505 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -824,6 +830,7 @@
 		99D692C21C6B36C300DA97E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				493898E31F74A51700166AD9 /* TestinDataAnalysis.framework */,
 				99D692C31C6B36C300DA97E1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -946,7 +953,8 @@
 				48217F921C8D7AF400A10D64 /* AppDelegate.h */,
 				48217F931C8D7AF400A10D64 /* AppDelegate.m */,
 			);
-			path = AppDelegate;
+			name = AppDelegate;
+			path = Vender;
 			sourceTree = "<group>";
 		};
 		99D693051C6B386300DA97E1 /* BaseNavigationController */ = {
@@ -1007,6 +1015,12 @@
 				99D693171C6B3A0600DA97E1 /* SDMeTableViewController.h */,
 				99D693181C6B3A0600DA97E1 /* SDMeTableViewController.m */,
 				48F289EB1C89B49A005B7602 /* SDMeTableViewController.storyboard */,
+				49F772411E9F723F00574D25 /* BBBBBViewController.h */,
+				49F772421E9F723F00574D25 /* BBBBBViewController.m */,
+				49F7723D1E9F723600574D25 /* CViewController.h */,
+				49F7723E1E9F723600574D25 /* CViewController.m */,
+				49F7723B1E9F723600574D25 /* DViewController.h */,
+				49F7723C1E9F723600574D25 /* DViewController.m */,
 			);
 			path = Host;
 			sourceTree = "<group>";
@@ -1030,7 +1044,7 @@
 				99D6932B1C6B412F00DA97E1 /* Me.xcassets */,
 				48F289EF1C89B864005B7602 /* tx.jpeg */,
 				99D6931F1C6B40F100DA97E1 /* Discover.xcassets */,
-				99D693211C6B40F100DA97E1 /* Images.xcassets */,
+				49A905961F4EB92500533BB1 /* Images.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -1038,6 +1052,7 @@
 		99D6932F1C6B484100DA97E1 /* cell_icons */ = {
 			isa = PBXGroup;
 			children = (
+				49A905891F4EB6BF00533BB1 /* Testin_Logo.png */,
 				48EFF4991C7EB39C009252A5 /* icon0.jpg */,
 				48EFF49A1C7EB39C009252A5 /* icon1.jpg */,
 				48EFF49B1C7EB39C009252A5 /* icon2.jpg */,
@@ -1204,6 +1219,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EEA2000B990281FDDC648653 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2104B7C4BEBDDBCFB0468E1C /* Pods-GSD_WeiXin(wechat).debug.xcconfig */,
+				D4069727E533DCCAB23F2572 /* Pods-GSD_WeiXin(wechat).release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1211,9 +1235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99D692EC1C6B36C400DA97E1 /* Build configuration list for PBXNativeTarget "GSD_WeiXin(wechat)" */;
 			buildPhases = (
+				2D7FA9BAD37D1EEBC95CAA22 /* [CP] Check Pods Manifest.lock */,
 				99D692BB1C6B36C300DA97E1 /* Sources */,
 				99D692BC1C6B36C300DA97E1 /* Frameworks */,
 				99D692BD1C6B36C300DA97E1 /* Resources */,
+				17D6976CB907CF0E493C5029 /* [CP] Embed Pods Frameworks */,
+				8AF4C08367575FD8295540C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1271,7 +1298,8 @@
 				TargetAttributes = {
 					99D692BE1C6B36C300DA97E1 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = V4Q779DR3D;
+						DevelopmentTeam = 5W66FF96MR;
+						ProvisioningStyle = Manual;
 					};
 					99D692D71C6B36C400DA97E1 = {
 						CreatedOnToolsVersion = 7.1;
@@ -1294,12 +1322,6 @@
 			mainGroup = 99D692B61C6B36C300DA97E1;
 			productRefGroup = 99D692C01C6B36C300DA97E1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 499DAA3D1E8D07DA00E3606A /* Products */;
-					ProjectRef = 499DAA3C1E8D07DA00E3606A /* TestinDataAnalysis.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				99D692BE1C6B36C300DA97E1 /* GSD_WeiXin(wechat) */,
@@ -1308,30 +1330,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		499DAA441E8D07DA00E3606A /* TestinDataAnalysis.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = TestinDataAnalysis.framework;
-			remoteRef = 499DAA431E8D07DA00E3606A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		499DAA461E8D07DA00E3606A /* TestinDataAnalysisTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TestinDataAnalysisTests.xctest;
-			remoteRef = 499DAA451E8D07DA00E3606A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		499DAA481E8D07DA00E3606A /* TestinDataAnalysis.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TestinDataAnalysis.bundle;
-			remoteRef = 499DAA471E8D07DA00E3606A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		99D692BD1C6B36C300DA97E1 /* Resources */ = {
@@ -1359,11 +1357,13 @@
 				48F337C31C72FDD90049144A /* test1.jpg in Resources */,
 				99D6935C1C6B49A200DA97E1 /* 20.jpg in Resources */,
 				99D693591C6B49A200DA97E1 /* 17.jpg in Resources */,
+				49A905971F4EB92500533BB1 /* Images.xcassets in Resources */,
 				99D6934B1C6B49A200DA97E1 /* 3.jpg in Resources */,
 				99D693531C6B49A200DA97E1 /* 11.jpg in Resources */,
 				48F337C41C72FDD90049144A /* test2.jpg in Resources */,
 				99D693521C6B49A200DA97E1 /* 10.jpg in Resources */,
 				48F337C61C72FDD90049144A /* test4.jpg in Resources */,
+				49A9058A1F4EB6BF00533BB1 /* Testin_Logo.png in Resources */,
 				48EFF4A61C7EB465009252A5 /* picon.jpg in Resources */,
 				99D6932C1C6B412F00DA97E1 /* Contacts.xcassets in Resources */,
 				99D6935E1C6B49A200DA97E1 /* 22.jpg in Resources */,
@@ -1381,7 +1381,6 @@
 				48EFF4951C7EB37B009252A5 /* pic5.jpg in Resources */,
 				48F337CE1C7320380049144A /* MLEmoji_Expression.plist in Resources */,
 				99D693551C6B49A200DA97E1 /* 13.jpg in Resources */,
-				99D693261C6B40F100DA97E1 /* Images.xcassets in Resources */,
 				99D693491C6B49A200DA97E1 /* 1.jpg in Resources */,
 				99D693511C6B49A200DA97E1 /* 9.jpg in Resources */,
 				48EFF4971C7EB37B009252A5 /* pic7.jpg in Resources */,
@@ -1415,6 +1414,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17D6976CB907CF0E493C5029 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GSD_WeiXin(wechat)/Pods-GSD_WeiXin(wechat)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D7FA9BAD37D1EEBC95CAA22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF4C08367575FD8295540C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GSD_WeiXin(wechat)/Pods-GSD_WeiXin(wechat)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99D692BB1C6B36C300DA97E1 /* Sources */ = {
@@ -1456,6 +1503,7 @@
 				48EFF4CE1C7F2A7F009252A5 /* MLLabelLayoutManager.m in Sources */,
 				99D693921C6F765800DA97E1 /* SDChatTableViewController.m in Sources */,
 				48EFF46C1C7EAFDF009252A5 /* SDImageCache.m in Sources */,
+				49F772401E9F723600574D25 /* CViewController.m in Sources */,
 				48EFF46A1C7EAFDF009252A5 /* MKAnnotationView+WebCache.m in Sources */,
 				48EFF4CA1C7F2A7F009252A5 /* MLExpressionManager.m in Sources */,
 				48EFF4701C7EAFDF009252A5 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1479,11 +1527,13 @@
 				48EFF4721C7EAFDF009252A5 /* SDWebImagePrefetcher.m in Sources */,
 				48EFF4811C7EB0AF009252A5 /* SDTimeLineCell.m in Sources */,
 				48EFF4751C7EAFDF009252A5 /* UIImage+MultiFormat.m in Sources */,
+				49F772431E9F723F00574D25 /* BBBBBViewController.m in Sources */,
 				48EFF46D1C7EAFDF009252A5 /* SDWebImageCompat.m in Sources */,
 				48EFF4AA1C7ED424009252A5 /* SDTimeLineCellCommentView.m in Sources */,
 				99D693651C6B49EA00DA97E1 /* SDHomeTableViewController.m in Sources */,
 				99D693771C6B4F8E00DA97E1 /* SDAnalogDataGenerator.m in Sources */,
 				48F289E41C89A9E6005B7602 /* SDDiscoverTableViewCell.m in Sources */,
+				49F7723F1E9F723600574D25 /* DViewController.m in Sources */,
 				48EFF4451C7EAFBF009252A5 /* SDRefreshHeaderView.m in Sources */,
 				99D692C41C6B36C300DA97E1 /* main.m in Sources */,
 				48F337D01C7320380049144A /* MLEmojiLabel.m in Sources */,
@@ -1544,7 +1594,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: tan bin (SJ8FYU46U2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: tan bin (SJ8FYU46U2)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1566,6 +1617,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "249b6a40-1452-4db3-9f30-f6181c79ce4e";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1587,7 +1639,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: tan bin (SJ8FYU46U2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: tan bin (SJ8FYU46U2)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1602,6 +1655,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "249b6a40-1452-4db3-9f30-f6181c79ce4e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1609,51 +1663,57 @@
 		};
 		99D692ED1C6B36C400DA97E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2104B7C4BEBDDBCFB0468E1C /* Pods-GSD_WeiXin(wechat).debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kao Hai (Z593QE452T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kao Hai (Z593QE452T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Liu (BC96NK8KFT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lei Liu (BC96NK8KFT)";
+				DEVELOPMENT_TEAM = 5W66FF96MR;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GSD_WeiXin(wechat)",
+					"$(PROJECT_DIR)/Pods/TestinDataAnalysis/TestinDataAnalysis",
+					"$(PROJECT_DIR)/GSD_WeiXin(wechat)/Others/Resources",
+					"$(PROJECT_DIR)/GSD_WeiXin(wechat)/Others",
 				);
 				INFOPLIST_FILE = "GSD_WeiXin(wechat)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.HaiKao.BJMember;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Testin.TestinDataAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5bae8692-8a1c-4029-83b8-439efcb377aa";
+				PROVISIONING_PROFILE = "408b2af3-32c8-4e70-9ab0-d35492e24cee";
+				PROVISIONING_PROFILE_SPECIFIER = ABTestinDataAnalysis_Development;
 			};
 			name = Debug;
 		};
 		99D692EE1C6B36C400DA97E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4069727E533DCCAB23F2572 /* Pods-GSD_WeiXin(wechat).release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kao Hai (Z593QE452T)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kao Hai (Z593QE452T)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Liu (BC96NK8KFT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lei Liu (BC96NK8KFT)";
+				DEVELOPMENT_TEAM = 5W66FF96MR;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GSD_WeiXin(wechat)",
+					"$(PROJECT_DIR)/Pods/TestinDataAnalysis/TestinDataAnalysis",
+					"$(PROJECT_DIR)/GSD_WeiXin(wechat)/Others/Resources",
+					"$(PROJECT_DIR)/GSD_WeiXin(wechat)/Others",
 				);
 				INFOPLIST_FILE = "GSD_WeiXin(wechat)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.HaiKao.BJMember;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.Testin.TestinDataAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5bae8692-8a1c-4029-83b8-439efcb377aa";
+				PROVISIONING_PROFILE = "408b2af3-32c8-4e70-9ab0-d35492e24cee";
+				PROVISIONING_PROFILE_SPECIFIER = ABTestinDataAnalysis_Development;
 			};
 			name = Release;
 		};

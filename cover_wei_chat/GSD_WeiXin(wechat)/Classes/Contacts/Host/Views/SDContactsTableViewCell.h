@@ -34,6 +34,8 @@
 
 @property (nonatomic, strong) SDContactModel *model;
 
+@property (nonatomic, strong) UILabel *nameLabel;
+
 + (CGFloat)fixedHeight;
 
 @end

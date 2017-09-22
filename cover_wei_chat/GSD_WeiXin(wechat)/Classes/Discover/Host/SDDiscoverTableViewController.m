@@ -30,14 +30,18 @@
 #import "SDTimeLineTableViewController.h"
 
 @interface SDDiscoverTableViewController ()
-
+{
+    UILabel *view;
+}
 @end
 
 @implementation SDDiscoverTableViewController
 
 - (instancetype)initWithStyle:(UITableViewStyle)style
 {
-    
+    if (self) {
+        self = [super initWithStyle:style];
+    }
     return [[UIStoryboard storyboardWithName:@"SDDiscoverTableViewController" bundle:nil] instantiateInitialViewController];
 }
 
@@ -56,6 +60,29 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
     return 5;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if (indexPath.section == 1 && indexPath.row == 0) {
+        if (!view) {
+            view = [[UILabel alloc]init];
+            view.center = self.view.center;
+            view.bounds = CGRectMake(0, 0, 100, 100);
+            view.backgroundColor = [UIColor redColor];
+            view.alpha = 0.5;
+//            view.tag = 112211;
+            view.textAlignment = NSTextAlignmentCenter;
+            view.text = @"Testin";
+            [[[UIApplication sharedApplication] keyWindow] addSubview:view];            
+        }
+    } else {
+        if (view) {
+            [view removeFromSuperview];
+            view = nil;
+        }
+    }
 }
 
 @end

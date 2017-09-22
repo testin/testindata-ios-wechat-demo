@@ -100,7 +100,7 @@ NSString * const kURLActions[] = {@"url->",@"email->",@"phoneNumber->",@"at->",@
 #pragma mark - common
 - (NSDictionary*)emojiDictForKey:(NSString*)key
 {
-    NSAssert(key&&key.length>0, @"emojiDictForKey:参数不得为空");
+    NSAssert(key&&key.length > 0, @"emojiDictForKey:参数不得为空");
     
     if (self.emojiDictRecords[key]) {
         return self.emojiDictRecords[key];

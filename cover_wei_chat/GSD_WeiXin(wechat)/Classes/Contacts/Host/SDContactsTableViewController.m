@@ -28,7 +28,7 @@
 
 #import "SDContactsTableViewController.h"
 #import "SDContactsSearchResultController.h"
-
+#import <TestinDataAnalysis/TestinDataAnalysis.h>
 #import "SDContactModel.h"
 #import "SDAnalogDataGenerator.h"
 
@@ -37,6 +37,9 @@
 #import "GlobalDefines.h"
 
 @interface SDContactsTableViewController () <UISearchBarDelegate>
+{
+    NSUInteger num;
+}
 
 @property (nonatomic, strong) UISearchController *searchController;
 
@@ -51,6 +54,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    num = 0;
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:[SDContactsSearchResultController new]];
     self.searchController.view.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.95];
     
@@ -144,10 +148,21 @@
     [newSectionArray removeObjectsInArray:temp];
     
     NSMutableArray *operrationModels = [NSMutableArray new];
-    NSArray *dicts = @[@{@"name" : @"新的朋友", @"imageName" : @"plugins_FriendNotify"},
+    
+    
+    NSArray *dicts = @[@{@"name" : @"新的朋友(0)", @"imageName" : @"plugins_FriendNotify"},
                        @{@"name" : @"群聊", @"imageName" : @"add_friend_icon_addgroup"},
                        @{@"name" : @"标签", @"imageName" : @"Contact_icon_ContactTag"},
                        @{@"name" : @"公众号", @"imageName" : @"add_friend_icon_offical"}];
+    
+    id ktext = [TestinDataAnalysis getExperimentVariable:@"newFriendButton_Text" defaultValue:@"normal"];
+    if ([ktext isEqualToString:@"new"]) {
+        dicts = @[@{@"name" : @"新的伙伴(0)", @"imageName" : @"plugins_FriendNotify"},
+                  @{@"name" : @"群聊", @"imageName" : @"add_friend_icon_addgroup"},
+                  @{@"name" : @"标签", @"imageName" : @"Contact_icon_ContactTag"},
+                  @{@"name" : @"公众号", @"imageName" : @"add_friend_icon_offical"}];
+    }
+    
     for (NSDictionary *dict in dicts) {
         SDContactModel *model = [SDContactModel new];
         model.name = dict[@"name"];
@@ -196,8 +211,19 @@
     return self.sectionTitlesArray;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        num ++ ;
+        SDContactsTableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section]];
+        [TestinDataAnalysis tracker:@"newFirendButton_click"];
+        id ktext = [TestinDataAnalysis getExperimentVariable:@"newFriendButton_Text" defaultValue:@"normal"];
+        if ([ktext isEqualToString:@"new"]) {
+            cell.nameLabel.text = [NSString stringWithFormat:@"新的伙伴(%ld)",num];
+        } else {
+            cell.nameLabel.text = [NSString stringWithFormat:@"新的朋友(%ld)",num];
+        }
+    }
 }
 
 

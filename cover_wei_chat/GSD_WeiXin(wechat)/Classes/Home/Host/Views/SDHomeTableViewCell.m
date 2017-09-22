@@ -27,7 +27,6 @@
  */
 
 #import "SDHomeTableViewCell.h"
-#import <TestinDataAnalysis/TestinDataAnalysis.h>
 #import "UIView+SDAutoLayout.h"
 
 #define kDeleteButtonWidth      60.0f
@@ -74,12 +73,6 @@
     
     _nameLabel = [UILabel new];
     _nameLabel.font = [UIFont systemFontOfSize:16];
-    id s = [TestinDataAnalysis getExperimentVariable:@"tintColor" defaultValue:@"black"];
-    if ([s isEqualToString:@"red"]) {
-        _nameLabel.textColor = [UIColor redColor];
-    } else {
-        _nameLabel.textColor = [UIColor blackColor];
-    }
     
     _timeLabel = [UILabel new];
     _timeLabel.font = [UIFont systemFontOfSize:12];

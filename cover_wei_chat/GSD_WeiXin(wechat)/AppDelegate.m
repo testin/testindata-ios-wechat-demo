@@ -36,6 +36,10 @@
 
 #import <TestinDataAnalysis/TestinDataAnalysis.h>
 
+//#import <Mixpanel.h>
+
+//#import "Mixpanel.h"
+
 @interface AppDelegate ()
 
 @end
@@ -44,9 +48,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [TestinDataAnalysis setDebugTouchAssist:YES];
-    [TestinDataAnalysis enableEditor];
-    [TestinDataAnalysis initWithAppkey:@"TESTIN_i79e44d88-4979-4aae-ac9c-46da6b6d5c7f" launchOptions:launchOptions];//withBaseServerURL:@"http://10.10.32.32" withWebSocketURL:@"ws://ablocal.testin.cn"];
+    
+    [TestinDataAnalysis setDebugTouchAssist:YES];
+    [TestinDataAnalysis initWithAppkey:@"TESTIN_ic2ca18f2-bc65-459d-854a-3eb7c057dce5" launchOptions:launchOptions];
+    
+//    [TestinDataAnalysis initWithAppkey:@"TESTIN_iec237088-204c-4b11-9385-0ab00ee061b9" launchOptions:launchOptions];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [SDAppFrameTabBarController new];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -60,13 +67,13 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     
-    UITabBarController *tabVC = (UITabBarController *)self.window.rootViewController;
-    UINavigationController *nav = tabVC.selectedViewController;
-    UIViewController *childVC = [nav.childViewControllers lastObject];
-    if ([childVC isKindOfClass:[SDHomeTableViewController class]]) {
-        SDHomeTableViewController *homeVC = (SDHomeTableViewController *)childVC;
-        [homeVC startTableViewAnimationWithHidden:NO];
-    }
+//    UITabBarController *tabVC = (UITabBarController *)self.window.rootViewController;
+//    UINavigationController *nav = tabVC.selectedViewController;
+//    UIViewController *childVC = [nav.childViewControllers lastObject];
+//    if ([childVC isKindOfClass:[SDHomeTableViewController class]]) {
+//        SDHomeTableViewController *homeVC = (SDHomeTableViewController *)childVC;
+//        [homeVC startTableViewAnimationWithHidden:NO];
+//    }
     
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

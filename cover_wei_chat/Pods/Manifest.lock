@@ -1,0 +1,22 @@
+PODS:
+  - Mixpanel (2.9.9):
+    - Mixpanel/Mixpanel (= 2.9.9)
+  - Mixpanel/Mixpanel (2.9.9)
+  - OCMock (3.3.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - Mixpanel
+  - OCMock
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  Mixpanel: 818d1940c2d9402453b349545022a86968097f57
+  OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: 25ecfe136324be888b740cce913c4372e7529807
+
+COCOAPODS: 1.2.0

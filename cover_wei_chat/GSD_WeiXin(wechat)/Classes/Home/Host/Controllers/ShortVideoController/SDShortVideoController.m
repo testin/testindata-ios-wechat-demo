@@ -280,8 +280,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     CALayer *layer=self.viewContainer.layer;
     layer.masksToBounds=YES;
     
-    _captureVideoPreviewLayer.frame=layer.bounds;
-    _captureVideoPreviewLayer.videoGravity=AVLayerVideoGravityResizeAspectFill;//填充模式
+    _captureVideoPreviewLayer.frame = layer.bounds;
+    _captureVideoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;//填充模式
     //将视频预览层添加到界面中
     //[layer addSublayer:_captureVideoPreviewLayer];
     [layer insertSublayer:_captureVideoPreviewLayer below:self.focusCursor.layer];
@@ -294,7 +294,7 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    [self setupCaptureSession];
+//    [self setupCaptureSession];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -312,7 +312,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     return [self.captureMovieFileOutput isRecording];
 }
 
--(void)dealloc{
+- (void)dealloc
+{
     [self removeNotification];
 }
 
@@ -366,9 +367,10 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 /**
  *  设置闪光灯按钮状态
  */
--(void)setFlashModeButtonStatus{
+- (void)setFlashModeButtonStatus
+{
     AVCaptureDevice *captureDevice=[self.captureDeviceInput device];
-    AVCaptureFlashMode flashMode=captureDevice.flashMode;
+    AVCaptureFlashMode flashMode = captureDevice.flashMode;
     if([captureDevice isFlashAvailable]){
         self.flashAutoButton.hidden=NO;
         self.flashOnButton.hidden=NO;
@@ -534,7 +536,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 /**
  *  给输入设备添加通知
  */
--(void)addNotificationToCaptureDevice:(AVCaptureDevice *)captureDevice{
+- (void)addNotificationToCaptureDevice:(AVCaptureDevice *)captureDevice
+{
     //注意添加区域改变捕获通知必须首先设置设备允许捕获
     [self changeDeviceProperty:^(AVCaptureDevice *captureDevice) {
         captureDevice.subjectAreaChangeMonitoringEnabled=YES;
@@ -543,19 +546,22 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     //捕获区域发生改变
     [notificationCenter addObserver:self selector:@selector(areaChange:) name:AVCaptureDeviceSubjectAreaDidChangeNotification object:captureDevice];
 }
--(void)removeNotificationFromCaptureDevice:(AVCaptureDevice *)captureDevice{
+- (void)removeNotificationFromCaptureDevice:(AVCaptureDevice *)captureDevice
+{
     NSNotificationCenter *notificationCenter= [NSNotificationCenter defaultCenter];
     [notificationCenter removeObserver:self name:AVCaptureDeviceSubjectAreaDidChangeNotification object:captureDevice];
 }
 /**
  *  移除所有通知
  */
--(void)removeNotification{
+- (void)removeNotification
+{
     NSNotificationCenter *notificationCenter= [NSNotificationCenter defaultCenter];
     [notificationCenter removeObserver:self];
 }
 
--(void)addNotificationToCaptureSession:(AVCaptureSession *)captureSession{
+- (void)addNotificationToCaptureSession:(AVCaptureSession *)captureSession
+{
     NSNotificationCenter *notificationCenter= [NSNotificationCenter defaultCenter];
     //会话出错
     [notificationCenter addObserver:self selector:@selector(sessionRuntimeError:) name:AVCaptureSessionRuntimeErrorNotification object:captureSession];
@@ -567,7 +573,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
  *
  *  @param notification 通知对象
  */
--(void)deviceConnected:(NSNotification *)notification{
+- (void)deviceConnected:(NSNotification *)notification
+{
     NSLog(@"设备已连接...");
 }
 /**
@@ -575,7 +582,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
  *
  *  @param notification 通知对象
  */
--(void)deviceDisconnected:(NSNotification *)notification{
+- (void)deviceDisconnected:(NSNotification *)notification
+{
     NSLog(@"设备已断开.");
 }
 /**
@@ -583,7 +591,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
  *
  *  @param notification 通知对象
  */
--(void)areaChange:(NSNotification *)notification{
+- (void)areaChange:(NSNotification *)notification
+{
     NSLog(@"捕获区域改变...");
 }
 
@@ -592,7 +601,8 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
  *
  *  @param notification 通知对象
  */
--(void)sessionRuntimeError:(NSNotification *)notification{
+- (void)sessionRuntimeError:(NSNotification *)notification
+{
     NSLog(@"会话发生错误.");
 }
 
